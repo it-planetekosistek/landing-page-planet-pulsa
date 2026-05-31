@@ -7,14 +7,14 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
             <CheckCircle2 className="w-4 h-4" />
-            <span className="text-sm font-medium">Agen Pulsa Terbaik</span>
+            <span className="text-sm font-medium">Aplikasi Agen Pulsa & PPOB</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-            Satu Aplikasi <br />
-            <span className="text-accent">Semua Transaksi</span>
+              Agen Pulsa & PPOB <br />
+              <span className="text-accent">Paket Data Murah</span>
           </h1>
           <p className="text-gray-600 text-lg mb-8">
-            Solusi tepat untuk Jual Pulsa, Paket Data Internet, Voucher Game & PPOB dengan Layanan Terbaik. Murah Setiap Hari !
+              Transaksi Pulsa Semua Operator, Paket Data Internet, Token PLN, Voucher Game, Produk Digital dan PPOB dengan Harga Murah.
           </p>
           
           {/* New features section */}
@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl bg-white">
               <img
                 src="/hero-mockup.png"
-                alt="Gambar belum ada"
+                alt="Planet Pulsa - Aplikasi Agen Pulsa dan PPOB Murah"
                 className="scale-110 object-cover"
               />
             </div>
