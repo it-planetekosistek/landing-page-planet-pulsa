@@ -8,6 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
+              <img
+                src="/planetpulsa-footer.png"
+                alt="Planet Pulsa Footer Logo"
+                className="h-8 w-8 object-contain"
+              />
               <span className="text-xl font-bold">Planet Pulsa</span>
             </Link>
             <p className="text-slate-400 mb-4">
@@ -33,8 +38,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Tentang Kami</h3>
             <ul className="space-y-3">
               <li><Link href="/" className="text-slate-400 hover:text-white transition-colors">Beranda</Link></li>
-              <li><Link href="/produk" className="text-slate-400 hover:text-white transition-colors">Keunggulan</Link></li>
-              <li><Link href="/blog" className="text-slate-400 hover:text-white transition-colors">Panduan</Link></li>
+              <li><Link href="/#features" className="text-slate-400 hover:text-white transition-colors">Keunggulan</Link></li>
+              <li><Link href="/#steps" className="text-slate-400 hover:text-white transition-colors">Panduan</Link></li>
               <li><Link href="/blog" className="text-slate-400 hover:text-white transition-colors">Blog</Link></li>
             </ul>
           </div>

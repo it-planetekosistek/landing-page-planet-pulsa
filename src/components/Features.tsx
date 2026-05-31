@@ -4,36 +4,42 @@ const features = [
   {
     icon: <Award className="w-8 h-8 text-white" />,
     bgColor: "bg-blue-500",
+    cardBgColor: "bg-blue-50",
     title: "Produk Super Lengkap",
     description: "Pulsa, Paket Data, Token PLN, Voucher Game & PPOB dalam Satu Aplikasi.",
   },
   {
     icon: <Shield className="w-8 h-8 text-white" />,
     bgColor: "bg-accent",
+    cardBgColor: "bg-orange-50",
     title: "Aman & Terpercaya",
     description: "Sistem Keamanan Berlapis Menjamin Keamanan Transaksi Anda.",
   },
   {
     icon: <Clock className="w-8 h-8 text-white" />,
     bgColor: "bg-purple-500",
+    cardBgColor: "bg-purple-50",
     title: "24 Jam Nonstop",
     description: "Layanan & Transaksi Tersedia Kapan Saja, Tanpa Hari Libur.",
   },
   {
     icon: <DollarSign className="w-8 h-8 text-white" />,
     bgColor: "bg-green-500",
+    cardBgColor: "bg-green-50",
     title: "Harga Murah",
     description: "Belanja Semua Produk dengan Harga Murah. Cuan Setiap Hari.",
   },
   {
     icon: <Smartphone className="w-8 h-8 text-white" />,
     bgColor: "bg-red-500",
+    cardBgColor: "bg-red-50",
     title: "Mudah Digunakan",
     description: "Aplikasi Dibuat dengan UI yang Modern dan Mudah Digunakan.",
   },
   {
     icon: <Headset className="w-8 h-8 text-white" />,
     bgColor: "bg-indigo-500",
+    cardBgColor: "bg-indigo-50",
     title: "CS Ramah",
     description: "CS Ramah dan Tepat untuk Setiap Transaksi Anda.",
   },
@@ -55,7 +61,7 @@ export default function Features() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+            className={`${feature.cardBgColor} rounded-3xl p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all`}
           >
             <div className={`${feature.bgColor} w-16 h-16 rounded-2xl flex items-center justify-center mb-6`}>
               {feature.icon}

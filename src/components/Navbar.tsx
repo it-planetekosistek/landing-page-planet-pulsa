@@ -16,10 +16,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200 shadow-sm">
+    <nav className="bg-accent/25 backdrop-blur-md border-b border-orange-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/planetpulsa-logo.png"
+              alt="Planet Pulsa Logo"
+              className="h-8 w-8 object-contain"
+            />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               PLANET PULSA
             </span>
@@ -63,7 +68,7 @@ export default function Navbar() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-gray-100 bg-white/95 backdrop-blur">
             <div className="flex flex-col gap-4">
               <Link href="/" className="text-gray-700 hover:text-primary transition-colors font-medium px-2 py-1">
                 Beranda
