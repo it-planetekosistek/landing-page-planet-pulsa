@@ -8,7 +8,7 @@ const client = createClient({
 
 export async function getArtikelPulsas(): Promise<ArtikelPulsa[]> {
   try {
-    const entries = await client.getEntries<ArtikelPulsa["fields"]>({
+    const entries = await client.getEntries({
       content_type: "artikelpulsa",
       limit: 1000,
       "fields.category": "Artikel Publish",
@@ -24,7 +24,7 @@ export async function getArtikelPulsas(): Promise<ArtikelPulsa[]> {
 
 export async function getArtikelBySlug(slug: string): Promise<ArtikelPulsa | null> {
   try {
-    const entries = await client.getEntries<ArtikelPulsa["fields"]>({
+    const entries = await client.getEntries({
       content_type: "artikelpulsa",
       "fields.slug": slug,
       limit: 1,

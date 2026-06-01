@@ -16,7 +16,7 @@ export interface ContentfulImage {
   };
 }
 
-export interface ArtikelPulsa {
+export interface artikelpulsa {
   sys: { id: string };
   fields: {
     title: string;
