@@ -68,7 +68,7 @@ export default function Navbar() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100 bg-white/95 backdrop-blur">
+          <div className="md:hidden py-4 border-t border-orange-200 shadow-sm">
             <div className="flex flex-col gap-4">
               <Link href="/" className="text-gray-700 hover:text-primary transition-colors font-medium px-2 py-1">
                 Beranda
