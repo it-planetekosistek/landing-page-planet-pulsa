@@ -21,7 +21,20 @@ export async function getArtikelPulsas(): Promise<ArtikelPulsa[]> {
     return [];
   }
 }
+export async function getAllArtikelPulsas(): Promise<ArtikelPulsa[]> {
+  try {
+    const entries = await client.getEntries({
+      content_type: "artikelpulsa",
+      limit: 1000,
+      "fields.brand": "Planet Pulsa",
+    });
 
+    return entries.items as unknown as ArtikelPulsa[];
+  } catch (error) {
+    console.error("Error fetching all articles:", error);
+    return [];
+  }
+}
 export async function getArtikelBySlug(slug: string): Promise<ArtikelPulsa | null> {
   try {
     const entries = await client.getEntries({
