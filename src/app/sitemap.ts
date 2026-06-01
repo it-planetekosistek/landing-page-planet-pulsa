@@ -1,8 +1,8 @@
 import { MetadataRoute } from "next";
-import { getArtikelPulsas } from "@/lib/contentful";
+import { getAllArtikelPulsas } from "@/lib/contentful";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const articles = await getArtikelPulsas();
+  const articles = await getAllArtikelPulsas();
 
   const articleUrls = articles.map((article) => ({
     url: `https://planetpulsa.id/blog/${article.fields.slug}`,
