@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import FloatingWA from "@/components/FloatingWA";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Testimonials from "@/components/Testimonials";
 import Steps from "@/components/Steps";
 import Cta from "@/components/Cta";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Steps />
+        <Testimonials />
         <Cta />
       </main>
       <Footer />
