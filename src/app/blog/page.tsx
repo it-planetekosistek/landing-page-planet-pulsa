@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
 import { getArtikelPulsas } from "@/lib/contentful";
 import type { Metadata } from "next";
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Blog Planet Pulsa",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   const articles = await getArtikelPulsas();
+  
   const firstTenArticles = articles.slice(0, 10);
   const otherArticles = articles.slice(10);
 
