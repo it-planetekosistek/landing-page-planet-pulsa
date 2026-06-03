@@ -19,6 +19,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
+      url: "https://planetpulsa.id/profil-planet-pulsa",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
       url: "https://planetpulsa.id/blog",
       lastModified: new Date(),
       changeFrequency: "daily",
