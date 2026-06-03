@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400">
               <li>Email : support@planetpulsa.id</li>
               <li>WhatsApp : +62 813 7120 4616</li>
-              <li>Jam Layanan : 24/7</li>
+              <li>Jam Layanan : 24/7 Online</li>
             </ul>
           </div>
         </div>
