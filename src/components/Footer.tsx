@@ -38,6 +38,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Tentang Kami</h3>
             <ul className="space-y-3">
               <li><Link href="/" className="text-slate-400 hover:text-white transition-colors">Beranda</Link></li>
+              <li><Link href="/profil-planet-pulsa" className="text-slate-400 hover:text-white transition-colors">Beranda</Link></li>
               <li><Link href="/#features" className="text-slate-400 hover:text-white transition-colors">Keunggulan</Link></li>
               <li><Link href="/#steps" className="text-slate-400 hover:text-white transition-colors">Panduan</Link></li>
               <li><Link href="/blog" className="text-slate-400 hover:text-white transition-colors">Blog</Link></li>
@@ -49,7 +50,7 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400">
               <li>Email : support@planetpulsa.id</li>
               <li>WhatsApp : +62 813 7120 4616</li>
-              <li>Jam Layanan : 24/7 Online</li>
+              <li>Jam Layanan : 24/7</li>
             </ul>
           </div>
         </div>
