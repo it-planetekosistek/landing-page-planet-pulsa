@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllArtikelPulsas } from "@/lib/contentful";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await getAllArtikelPulsas();
