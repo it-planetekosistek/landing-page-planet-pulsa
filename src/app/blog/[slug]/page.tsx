@@ -83,7 +83,7 @@ export default async function ArtikelPage(props: Props) {
         </header>
 
         {/* Article Content */}
-        <article className="prose prose-lg max-w-none text-justify prose-a:text-gray-900 prose-a:no-underline prose-a:font-normal hover:prose-a:text-gray-900">
+        <article className="prose prose-lg max-w-none text-justify prose-a:text-gray-900 prose-a:no-underline prose-a:font-normal hover:prose-a:text-gray-900 prose-p:!mb-3 prose-p:!mt-0 prose-p:!leading-snug prose-ul:!mb-4 prose-ul:!mt-1 prose-li:!mb-1.5 prose-li:!mt-0 prose-ol:my-3 prose-h2:mb-3 prose-h2:mt-6 prose-h3:mb-2 prose-h3:mt-4">
           {content ? (
             documentToReactComponents(content)
           ) : (
