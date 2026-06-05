@@ -97,7 +97,7 @@ export default function PanduanList() {
         Panduan Planet Pulsa
       </h1>
       <p className="text-gray-600 mb-10">
-        Panduan lengkap untuk menggunakan aplikasi Planet Pulsa.
+        Panduan menggunakan aplikasi Planet Pulsa.
       </p>
 
       {sortedPanduanList.length === 0 ? (
