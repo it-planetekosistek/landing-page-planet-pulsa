@@ -1,7 +1,28 @@
+"use client";
 import Link from "next/link";
 import { Zap, Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  const scrollToSection = (id: string) => {
+    if (pathname !== "/") {
+      return; // if not on home, just let Link handle it normally
+    }
+    const element = document.getElementById(id);
+    if (element) {
+      const navHeight = 64; // tinggi navbar (h-16 = 64px)
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,8 +60,18 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/" className="text-slate-400 hover:text-white transition-colors">Beranda</Link></li>
               <li><Link href="/profil-planet-pulsa" className="text-slate-400 hover:text-white transition-colors">Profil</Link></li>
-              <li><Link href="/#features" className="text-slate-400 hover:text-white transition-colors">Keunggulan</Link></li>
-              <li><Link href="/#steps" className="text-slate-400 hover:text-white transition-colors">Panduan</Link></li>
+              <li>
+                <button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("features");
+                  }}
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Keunggulan
+                </button>
+              </li>
+              <li><Link href="/panduan" className="text-slate-400 hover:text-white transition-colors">Panduan</Link></li>
               <li><Link href="/blog" className="text-slate-400 hover:text-white transition-colors">Blog</Link></li>
             </ul>
           </div>

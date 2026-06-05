@@ -10,7 +10,14 @@ export default function Navbar() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navHeight = 64; // tinggi navbar (h-16 = 64px)
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
       setMobileMenuOpen(false);
     }
   };
@@ -40,12 +47,9 @@ export default function Navbar() {
             >
               Keunggulan
             </button>
-            <button
-              onClick={() => scrollToSection("steps")}
-              className="text-gray-700 hover:text-primary transition-colors font-medium"
-            >
+            <Link href="/panduan" className="text-gray-700 hover:text-primary transition-colors font-medium">
               Panduan
-            </button>
+            </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary transition-colors font-medium">
               Blog
             </Link>
@@ -79,12 +83,9 @@ export default function Navbar() {
               >
                 Keunggulan
               </button>
-              <button
-                onClick={() => scrollToSection("steps")}
-                className="text-gray-700 hover:text-primary transition-colors font-medium text-left px-2 py-1"
-              >
+              <Link href="/panduan" className="text-gray-700 hover:text-primary transition-colors font-medium px-2 py-1">
                 Panduan
-              </button>
+              </Link>
               <Link href="/blog" className="text-gray-700 hover:text-primary transition-colors font-medium px-2 py-1">
                 Blog
               </Link>

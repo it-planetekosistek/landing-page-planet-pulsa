@@ -7,8 +7,41 @@ import type { Metadata } from "next";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Blog Planet Pulsa",
-  description: "Artikel seputar pulsa, PPOB, bisnis digital, dan teknologi pembayaran.",
+  title:
+    "Blog Planet Pulsa | Pulsa Murah, Aplikasi Agen Pulsa, PPOB & Bisnis Digital",
+  description:
+    "Baca artikel terbaru seputar pulsa murah, aplikasi agen pulsa, PPOB, token listrik, bisnis digital, top up e-wallet, dan teknologi pembayaran di Planet Pulsa.",
+  keywords: [
+    "Planet Pulsa",
+    "Pulsa Murah",
+    "Aplikasi Agen Pulsa",
+    "PPOB",
+    "Bisnis Pulsa",
+    "Token Listrik",
+    "Top Up Ewallet",
+    "Pulsa Online",
+    "Bisnis Digital",
+  ],
+  alternates: {
+    canonical: "https://planetpulsa.id/blog",
+  },
+  openGraph: {
+    title:
+      "Blog Planet Pulsa | Pulsa Murah, Aplikasi Agen Pulsa, PPOB & Bisnis Digital",
+    description:
+      "Artikel terbaru tentang pulsa murah, PPOB, bisnis digital, top up e-wallet, dan teknologi pembayaran.",
+    url: "https://planetpulsa.id/blog",
+    siteName: "Planet Pulsa",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Blog Planet Pulsa | Pulsa Murah, Aplikasi Agen Pulsa, PPOB & Bisnis Digital",
+    description:
+      "Artikel terbaru tentang pulsa murah, PPOB, bisnis digital, dan teknologi pembayaran - Planet Pulsa",
+  },
 };
 
 export default async function BlogPage() {
@@ -24,7 +57,14 @@ export default async function BlogPage() {
       <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-orange-200 rounded-full blur-3xl opacity-30 translate-y-1/2"></div>
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-16 relative z-10">
-        <h1 className="text-2xl md:text-2xl font-bold text-gray-900 mb-10">Artikel Terbaru</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+        Artikel Pulsa, PPOB, Bisnis Digital & Teknologi
+        </h1>
+        <p className="text-gray-600 mb-10">
+        Blog Planet Pulsa menghadirkan berbagai artikel informatif seputar
+        layanan digital, pembayaran online, perkembangan teknologi, serta
+        tips dan strategi untuk mengembangkan usaha secara lebih efektif.
+        </p>
 
         {articles.length === 0 ? (
           <div className="text-center py-20 text-gray-600 text-lg">
@@ -33,14 +73,16 @@ export default async function BlogPage() {
         ) : (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-              {firstTenArticles.map((artikel) => (
-                <BlogCard key={artikel.sys.id} artikel={artikel} />
+              {firstTenArticles.map((artikel, index) => (
+                <BlogCard key={artikel.sys.id} artikel={artikel} index={index} />
               ))}
             </div>
 
             {otherArticles.length > 0 && (
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Artikel Lainnya</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Artikel Pulsa dan Bisnis Digital Lainnya
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {otherArticles.map((artikel) => (
                     <Link
