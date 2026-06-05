@@ -6,7 +6,7 @@ import PanduanList from "@/components/PanduanList";
 export const metadata: Metadata = {
   title: "Panduan Planet Pulsa | Cara Daftar, Deposit, Transaksi & PPOB",
   description:
-    "Panduan lengkap menggunakan Planet Pulsa mulai dari pendaftaran akun, deposit saldo, transaksi pulsa, paket data, PPOB, hingga tips menjalankan bisnis agen pulsa.",
+    "Panduan lengkap menggunakan aplikasi Planet Pulsa. ",
 
   keywords: [
     "Panduan Planet Pulsa",

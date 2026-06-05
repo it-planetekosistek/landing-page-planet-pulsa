@@ -94,10 +94,10 @@ export default function PanduanList() {
   return (
     <>
       <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-        Panduan Lengkap Planet Pulsa
+        Panduan Planet Pulsa
       </h1>
       <p className="text-gray-600 mb-10">
-        Panduan lengkap untuk menggunakan aplikasi Planet Pulsa, mulai dari daftar, deposit, transaksi, hingga tips bisnis.
+        Panduan lengkap untuk menggunakan aplikasi Planet Pulsa.
       </p>
 
       {sortedPanduanList.length === 0 ? (
