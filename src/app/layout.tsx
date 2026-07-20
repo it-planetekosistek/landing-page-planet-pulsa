@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://planetpulsa.id"),
+  metadataBase: new URL("https://www.planetpulsa.id"),
 
   title: {
     default:
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://planetpulsa.id",
+    url: "https://www.planetpulsa.id",
     siteName: "Planet Pulsa - Agen Pulsa & Paket Data Murah",
 
     title:
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://planetpulsa.id",
+    canonical: "https://www.planetpulsa.id",
   },
 
   category: "business",
@@ -107,13 +107,13 @@ export default function RootLayout({
           {
             "@type": "Organization",
             name: "Planet Pulsa",
-            url: "https://planetpulsa.id",
-            logo: "https://planetpulsa.id/logo.png",
+            url: "https://www.planetpulsa.id",
+            logo: "https://www.planetpulsa.id/logo.png",
           },
           {
             "@type": "WebSite",
             name: "Planet Pulsa - Agen Pulsa & Paket Data Murah",
-            url: "https://planetpulsa.id",
+            url: "https://www.planetpulsa.id",
           },
         ],
       }),

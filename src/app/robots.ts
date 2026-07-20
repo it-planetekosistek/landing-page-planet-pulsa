@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://planetpulsa.id/sitemap.xml",
+    sitemap: "https://www.planetpulsa.id/sitemap.xml",
   };
 }

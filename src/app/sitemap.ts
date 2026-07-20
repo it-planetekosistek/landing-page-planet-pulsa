@@ -7,7 +7,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await getAllArtikelPulsas();
 
   const articleUrls = articles.map((article) => ({
-    url: `https://planetpulsa.id/blog/${article.fields.slug}`,
+    url: `https://www.planetpulsa.id/blog/${article.fields.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
@@ -15,25 +15,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     {
-      url: "https://planetpulsa.id",
+      url: "https://www.planetpulsa.id",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: "https://planetpulsa.id/profil-planet-pulsa",
+      url: "https://www.planetpulsa.id/profil-planet-pulsa",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://planetpulsa.id/blog",
+      url: "https://www.planetpulsa.id/blog",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: "https://planetpulsa.id/panduan",
+      url: "https://www.planetpulsa.id/panduan",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,

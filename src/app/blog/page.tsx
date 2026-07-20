@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     "Bisnis Digital",
   ],
   alternates: {
-    canonical: "https://planetpulsa.id/blog",
+    canonical: "https://www.planetpulsa.id/blog",
   },
   openGraph: {
     title:
       "Blog Planet Pulsa | Pulsa Murah, Aplikasi Agen Pulsa, PPOB & Bisnis Digital",
     description:
       "Artikel terbaru tentang pulsa murah, PPOB, bisnis digital, top up e-wallet, dan teknologi pembayaran.",
-    url: "https://planetpulsa.id/blog",
+    url: "https://www.planetpulsa.id/blog",
     siteName: "Planet Pulsa",
     locale: "id_ID",
     type: "website",

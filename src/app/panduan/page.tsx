@@ -4,24 +4,8 @@ import Footer from "@/components/Footer";
 import PanduanList from "@/components/PanduanList";
 
 export const metadata: Metadata = {
-  title: "Panduan Planet Pulsa | Cara Daftar, Deposit, Transaksi & PPOB",
-  description:
-    "Panduan lengkap menggunakan aplikasi Planet Pulsa. ",
-
-  keywords: [
-    "Panduan Planet Pulsa",
-    "Cara Daftar Planet Pulsa",
-    "Cara Deposit Planet Pulsa",
-    "Cara Transaksi Planet Pulsa",
-    "Panduan PPOB",
-    "Aplikasi Agen Pulsa",
-    "Bisnis Pulsa",
-    "Planet Pulsa",
-  ],
-
-  alternates: {
-    canonical: "https://planetpulsa.id/panduan",
-  },
+  title: "Panduan Planet Pulsa | Panduan Lengkap Menggunakan Aplikasi",
+  description: "Panduan lengkap menggunakan Planet Pulsa, mulai dari daftar, deposit, transaksi, hingga tips bisnis pulsa dan PPOB.",
 };
 
 export default function PanduanPage() {
